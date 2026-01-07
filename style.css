@@ -16,6 +16,7 @@ color: #333;
 body {
     color: #333;
     background-color: #fff8f0;
+
   }
   p{
     text-align: center;
@@ -26,27 +27,39 @@ body {
     width: 90%;
     margin-bottom: 20px;
   }
+
+.turinys {
+  display: flex;
+  gap: 0px;
+  align-items: flex-start;
+}
+
   aside {
-    display: grid;
-  
+    flex-shrink:0 ;
     float: right;
+    display: block;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    height: calc(100vh - 40px);
+    box-sizing: border-box;
     width: 250px;
     background-color: #ffd6a5;
-    background-size: auto;
-    padding: 0 15px;
+    padding: 15px;
     margin: 20px 10px;
-    margin-left: 20px;
+   
     font-size: 16px;
     text-align: center;
     color: #333;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     border-radius: 8px;
-    margin-bottom: 20px;
-    height : auto;
+    overflow-y: auto;
+    margin-bottom: 120px;
+  width: 250px;
+   min-height: 500px;
+  }
 
-}
-
-.aside p  { 
+aside p  { 
     color: #333;
     text-align: center;
     margin: 20px auto;
@@ -90,9 +103,12 @@ body {
   .blokas {
     display: grid;
     text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
     color: #333;
+   width: auto;
+    padding: 10px;
+    box-sizing: border-box;
    
     
   }
@@ -101,12 +117,13 @@ body {
   color: #333;
   }
 
+
 article {
-display: grid;
-float : left;
+display: block;
 text-size-adjust: auto;
     text-align: center;
     width: auto;
+    min-width: 300px;
     margin: 10px;
     padding: 20px;
     color: #333;
@@ -114,14 +131,19 @@ text-size-adjust: auto;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     border-radius: 10px;
     margin-bottom: 20px;
+    justify-content: center;
+    width: auto;
+    
 }
 
 
-  #galerija {
-    display : grid;
+  .galerija {
+    
     align-items: center;
     text-align: center;
     margin: 40px;
+    width: auto;
+    
  
     
   }
@@ -131,7 +153,9 @@ text-size-adjust: auto;
   }
   
   img {
-    width: 400px;
+    width: auto;
+    max-width: 400px;
+    height: auto;
     margin: 10px;
     align-items: center;
     border-radius: 8px;
@@ -139,6 +163,7 @@ text-size-adjust: auto;
   }
   
   table {
+    align-items: center;
     width: 100%;
     border-collapse: collapse;
     background-color: #ffffff;
@@ -147,7 +172,8 @@ text-size-adjust: auto;
     margin-bottom: 20px;
   }
   .lentele{
-    margin-left: 350px;
+    margin-left: 175px;
+    margin-right: 175px;
    height: 200px;
   padding: 20px 0px ;
     width: 500px;
@@ -165,29 +191,25 @@ td {
     color: #333;
     margin-bottom: 20px;
   }
-  footer{
-    background: linear-gradient(90deg, #ff7b00, #ffaf40);
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-  }
+  
   .apie-nuotrauka {
-    float: right; 
-    width: 300px; 
+    justify-items: center;
+text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: auto; 
     margin: 10px 0 10px 20px; 
     
   }
   .forma {
-    display: grid;
-    padding: 20px 280px ;
-    padding-left: 70px  ;
-    flex-direction: column;
-    width: auto;
-margin: right 30 px ;
-
-  }
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
   .forma label {
     margin-bottom: 5px;
     color: #333;
@@ -210,7 +232,15 @@ margin: right 30 px ;
   .forma button:hover {
     background-color: #e36b00;
   }    
-
+footer{
+    background: linear-gradient(90deg, #ff7b00, #ffaf40);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    clear: both;
+  }
 
 
 @media (max-width: 1024px) {
@@ -218,6 +248,7 @@ margin: right 30 px ;
     width: 90%;
   }
   article {
+    float: none;
     width: auto;
     margin: 10px;
     padding: 15px;
@@ -228,17 +259,27 @@ margin: right 30 px ;
   aside {
     float: none;
     
-    width: auto;
+    
     margin: 20px;
   }
   .lentele {
     margin-left: 0;
     width: 90%;
   }
+  .apie-nuotrauka { 
+    float: none;
+    width: 60%;
+    margin: 10px 0;
+    justify-self: center;
+
 }
+  .galerija {
+    margin: 10px;
 
 
-@media (max-width: 600px) {
+  }
+}
+@media (max-width: 788px) { 
   #logo {
     width: 80px;
     height: 80px;
@@ -259,28 +300,43 @@ margin: right 30 px ;
   img {
     width: 100%;
     margin: 5px 0;
+    margin-top: 40px;
   }
   .galerija {
     margin: 10px;
+    
+  }
+  
+  .apie-nuotrauka {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+   
+  }
+  .turinys {
+    flex-direction: column;
+  }
+  aside {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    margin-top: 20px;
+    margin: 10px 0 30px 0;
+    height: auto;
+    float : none;
+   
     
   }
   .lentele {
     margin-left: 0;
     width: 100%;
 
-  } 
-  aside {
-    display: grid;
-    width: auto;
-    height : 400px;
-    margin: 10px 0;
-    margin-bottom: 30px;
-    
   }
   .forma {
     padding: 10px;
-    h2 {  
-      width: 430px;
-    } 
+  }
+
+  .forma h2 {
+    width: 100%;
   }
 }
