@@ -1,74 +1,107 @@
 <!DOCTYPE html>
+<html lang="lt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galerija</title>
+  <title>Galerija - JShot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="puslapis">
-        <h1>JShot <img src="logo.png" alt="logo" id="logo"></h1>
+
+    <div class="container py-4" id="puslapis">
+        
+        <header class="mb-4">
+            <h1 class="d-flex align-items-center flex-wrap gap-3">
+                JShot 
+                <img src="logo.png" alt="logo" id="logo" class="img-fluid" style="max-height: 70px;"> 
+            </h1>
+        </header>
    
+        <nav class="mb-5 d-flex flex-column flex-md-row gap-3 border-bottom pb-3">
+          <a href="index.html" class="text-decoration-none">Apie mane</a>
+          <a href="galerija.html" class="text-decoration-none fw-bold">Portfolio</a>
+          <a href="Paslaugos.html" class="text-decoration-none">Paslaugos</a>
+          <a href="kainorastis.html" class="text-decoration-none">Kainoraštis</a>
+          <a href="forma.html" class="text-decoration-none">DUK</a>
+          <button id="nustatymuAtidarymas" class="btn btn-outline-dark btn-sm mt-3 mt-lg-0 ms-lg-auto">
+            Nustatymai
+        </button>   
+        </nav>
+
+        <div class="row g-4 turinys">
+            
+            <div class="col-12 col-md-12 col-lg-8 col-xl-9 blokas">
+                <h1 class="mb-4">Portfolio</h1>
+                
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n1.jpg" alt="Nuotrauka 1" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n2.jpg" alt="Nuotrauka 2" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n4.jpg" alt="Nuotrauka 4" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n5.JPG" alt="Nuotrauka 5" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n6.JPG" alt="Nuotrauka 6" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n8.jpg" alt="Nuotrauka 8" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n9.jpg" alt="Nuotrauka 9" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n10.jpg" alt="Nuotrauka 10" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n11.jpg" alt="Nuotrauka 11" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n12.jpg" alt="Nuotrauka 12" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n14.jpg" alt="Nuotrauka 14" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n15.jpg" alt="Nuotrauka 15" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n16.jpg" alt="Nuotrauka 16" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n13.jpg" alt="Nuotrauka 13" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n7.jpg" alt="Nuotrauka 7" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n17.jpg" alt="Nuotrauka 17" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-12 col-sm-6 col-md-4"><img src="n3.jpg" alt="Nuotrauka 3" class="img-fluid rounded shadow-sm"></div>
+                </div>
+            </div>
+
+            <aside class="col-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="p-4 rounded border h-100" style="background-color: rgba(0,0,0,0.02);">
+                  <h2 class="h4">Kontaktai</h2>
+                  <p><strong>El. paštas:</strong><br> justasskru@gmail.com</p>
+                  <p><strong>Telefonas:</strong><br> +370 612 34567</p>
+                  <p><strong>Adresas:</strong><br> Vilnius, Lietuva</p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Pasiūlymas</h2>
+                  <p class="text-danger">Renginio fotografavimas iki gruodžio 5 d. <strong>40% pigiau</strong></p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Sekite mus</h2>
+                  <p>Instagram: @JShot<br>Facebook: JShot Photography</p>  
+              </div>
+            </aside>
         </div>
-<nav>
-  <a href="index.html">Apie mane</a>
-  <a href="galerija.html">Portfolio</a>
-  <a href="Paslaugos.html">Paslaugos</a>
-  <a href="kainorastis.html">Kainoraštis</a>
-  <a href="forma.html">DUK</a>
-</nav>
 
-<div class="turinys">
-<div class="galerija">
-  
- 
-  <h1>Portfolio</h1>
-
-
+        <footer class="mt-5 pt-4 border-top text-center text-muted">
+          <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
+        </footer>
     
-      <img src="n1.jpg" alt="Nuotrauka 1">
-      <img src="n2.jpg" alt="Nuotrauka 2">
-     
-      <img src="n4.jpg" alt="Nuotrauka 4">
-      <img src="n5.JPG" alt="Nuotrauka 5">
-      <img src="n6.JPG" alt="Nuotrauka 6">
-    
-      <img src="n8.jpg" alt="Nuotrauka 8">
-      <img src="n9.jpg" alt="Nuotrauka 9">
-      <img src="n10.jpg" alt="Nuotrauka 10">
-      <img src="n11.jpg" alt="Nuotrauka 11">
-      <img src="n12.jpg" alt="Nuotrauka 12">
+    </div>
+<div id="nustatymuLangas" class="nustatymu-modalas">
+  <div class="nustatymu-turinys">
+      <span id="uzdarytiNustatymus" class="uzdaryti">&times;</span>
+      <h3 class="h4 mb-3">Nustatymai</h3>
       
-  
- 
-      <img src="n14.jpg" alt="Nuotrauka 14">
-      <img src="n15.jpg" alt="Nuotrauka 15">
-      <img src="n16.jpg" alt="Nuotrauka 16">
-      <img src="n13.jpg" alt="Nuotrauka 13">
-      <img src="n7.jpg" alt="Nuotrauka 7">
-      <img src="n17.jpg" alt="Nuotrauka 17">
-       <img src="n3.jpg" alt="Nuotrauka 3">
-   
-  
-</div>
-<aside >
-  <h2>Kontaktai </h2>
-  <p>El. paštas: justasskru@gmail.com</p>
-  <p>Telefonas: <br> +370 612 34567</p>
-  <p>Adresas: Vilnius, Lietuva</p>
-  <h2>Pasiūlymas</h2>
-  <p>Renginio fotografimas iki gruodžio 5 d. 40% pigiau </p>
-  <h2>Sekite mus</h2>
-  <p>Instagram: @JShot</p>
-  <p>Facebook: JShot Photography</p>  
-  
-</aside>
-  
+      <div class="mb-3">
+          <label class="form-label fw-bold">Fono režimas:</label>
+          <select id="temosPasirinkimas" class="form-select">
+              <option value="default">Šviesus (Įprastas)</option>
+              <option value="dark">Naktinis (Tamsus)</option>
+              <option value="sepia">Sepija (Skaitymo)</option>
+          </select>
+      </div>
+
+      <div class="mb-3">
+          <label class="form-label fw-bold">Teksto dydis: <span id="dydžioReikšmė">16px</span></label>
+          <input type="range" id="tekstoDydis" class="form-range" min="14" max="24" step="1" value="16">
+      </div>
+  </div>
 </div>
 
-<footer>
-  <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
-
-</footer>
+<script src="script.js"></script>
 </body>
+
 </html>

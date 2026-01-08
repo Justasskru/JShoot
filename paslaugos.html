@@ -1,119 +1,139 @@
 <!DOCTYPE html>
+<html lang="lt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apie mane</title>
+  <title>Paslaugos - JShot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="page">
-        <h1>JShot <img src="logo.png" alt="logo" id="logo"></h1>
+
+    <div class="container py-4" id="puslapis">
+        
+        <header class="mb-4">
+            <h1 class="d-flex align-items-center flex-wrap gap-3">
+                JShot 
+                <img src="logo.png" alt="logo" id="logo" class="img-fluid" style="max-height: 70px;"> 
+            </h1>
+        </header>
    
-    
+        <nav class="mb-5 d-flex flex-column flex-md-row gap-3 border-bottom pb-3">
+          <a href="index.html" class="text-decoration-none">Apie mane</a>
+          <a href="galerija.html" class="text-decoration-none">Portfolio</a>
+          <a href="Paslaugos.html" class="text-decoration-none fw-bold">Paslaugos</a>
+          <a href="kainorastis.html" class="text-decoration-none">Kainoraštis</a>
+          <a href="forma.html" class="text-decoration-none">DUK</a>
+          <button id="nustatymuAtidarymas" class="btn btn-outline-dark btn-sm mt-3 mt-lg-0 ms-lg-auto">
+            Nustatymai
+        </button>
+        </nav>
+
+        <div class="row g-4 turinys">
+            
+            <div class="col-12 col-md-12 col-lg-8 col-xl-9 blokas">
+                <h1 class="mb-4 border-bottom pb-2">Paslaugos</h1>
+                
+                <article class="mb-5">
+                    <h2 class="h3">Portretinė fotografija</h2>
+                    <p class="text-muted lh-base">Ieškai profesionalaus ir išraiškingo portreto? Siūlome portretinės fotografijos paslaugą, kuri padės užfiksuoti tavo asmenybę ir unikalumą. Sesijos metu kuriame natūralų ir jaukų aplinkos pojūtį.</p>
+                    <h3 class="h5 mt-3">Paslaugos privalumai:</h3>
+                    <ul class="list-unstyled ps-3">
+                        <li>• Individualus požiūris ir konsultacija</li>
+                        <li>• Natūralios, nuoširdžios nuotraukos</li>
+                        <li>• Profesionali nuotraukų retušė</li>
+                        <li>• Galimybė rinktis skirtingas vietas</li>
+                    </ul>
+                </article>
+
+                <article class="mb-5">
+                    <h2 class="h3">Vestuvinė fotografija</h2>
+                    <p class="text-muted lh-base">Jūsų vestuvių diena – viena gražiausių gyvenimo akimirkų. Mano tikslas – šias akimirkas įamžinti taip, kad kiekvienas kadras pasakotų Jūsų unikalią meilės istoriją.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="h5">Paslauga apima:</h3>
+                            <ul class="list-unstyled ps-3">
+                                <li>• Vestuvių dienos fotografavimą</li>
+                                <li>• Poros fotosesiją</li>
+                                <li>• Reportažinius kadrus</li>
+                                <li>• Atrinktas, retušuotas nuotraukas</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h5">Papildomos galimybės:</h3>
+                            <ul class="list-unstyled ps-3">
+                                <li>• Sužadėtuvių fotosesija</li>
+                                <li>• Fotoknygos kūrimas</li>
+                                <li>• Kelionės į užsienį</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mb-5">
+                    <h2 class="h3">Nuotraukų redagavimas</h2>
+                    <p class="text-muted">Teikiu aukštos kokybės nuotraukų redagavimo paslaugas asmeniniams ir verslo poreikiams.</p>
+                    <ul class="list-unstyled ps-3">
+                        <li>• Spalvų ir apšvietimo korekcija</li>
+                        <li>• Retušavimas (oda, detalės)</li>
+                        <li>• Fonų keitimas ar šalinimas</li>
+                    </ul>
+                </article>
+
+                <article class="mb-5">
+                    <h2 class="h3">Renginių fotografavimas</h2>
+                    <p class="text-muted">Profesionalus įvairių renginių – nuo verslo konferencijų iki asmeninių švenčių – įamžinimas.</p>
+                </article>
+
+                <article class="mb-5">
+                    <h2 class="h3">Drono fotografija ir filmavimas</h2>
+                    <p class="text-muted">Unikalūs vaizdai iš paukščio skrydžio. Aukštos raiškos nuotraukos ir 4K vaizdo įrašai.</p>
+                </article>
+            </div>
+
+            <aside class="col-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="p-4 rounded border h-100" style="background-color: rgba(0,0,0,0.02);">
+                  <h2 class="h4">Kontaktai</h2>
+                  <p><strong>El. paštas:</strong><br> justasskru@gmail.com</p>
+                  <p><strong>Telefonas:</strong><br> +370 612 34567</p>
+                  <p><strong>Adresas:</strong><br> Vilnius, Lietuva</p>
+                  <hr class="my-4">
+                  <h2 class="h4">Pasiūlymas</h2>
+                  <p class="text-danger">Renginio fotografavimas iki gruodžio 5 d. <strong>40% pigiau</strong></p>
+                  <hr class="my-4">
+                  <h2 class="h4">Sekite mus</h2>
+                  <p>Instagram: @JShot<br>Facebook: JShot Photography</p>  
+              </div>
+            </aside>
         </div>
-<nav>
-  <a href="index.html">Apie mane</a>
-  <a href="galerija.html">Portfolio</a>
-  <a href="Paslaugos.html">Paslaugos</a>
-  <a href="kainorastis.html">Kainoraštis</a>
-  <a href="forma.html">DUK</a>
-</nav>
-<div class="turinys">
-<div class="blokas">
-  
-    <h1>Paslaugos</h1>
-    <article>
-    <h2>Portretinė fotografija</h2>
-   <p>Ieškai profesionalaus ir išraiškingo portreto? Siūlome portretinės fotografijos paslaugą, kuri padės užfiksuoti tavo asmenybę ir unikalumą. Sesijos metu kuriame natūralų ir jaukų aplinkos pojūtį, kad kiekviena nuotrauka atspindėtų tavo tikrąjį charakterį. Naudojame profesionalią įrangą ir apšvietimą, kad nuotraukos būtų ryškios, aukštos kokybės ir tinkamos tiek socialiniams tinklams, tiek spausdintai medžiagai. <br></p>
-   <h3>Paslaugos privalumai:</h3>
-   <p style="text-align: left;">
-        •	Individualus požiūris ir konsultacija prieš fotosesiją<br>
-        •	Natūralios, nuoširdžios ir išraiškingos nuotraukos<br>
-        •	Profesionali nuotraukų retušė ir paruošimas skaitmeniniam naudojimui<br>
-        •	Galimybė rinktis skirtingas vietas ar studijos aplinką<br>
+
+        <footer class="mt-5 pt-4 border-top text-center text-muted">
+          <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
+        </footer>
     
-    </p>
-   </article> 
-   <article>
-   <h2>Vestuvinė fotografija</h2>
-    <p>Jūsų vestuvių diena – viena gražiausių gyvenimo akimirkų, kupina emocijų, šypsenų ir tikrų jausmų. Mano tikslas – šias akimirkas įamžinti taip, kad kiekvienas kadras pasakotų Jūsų unikalią meilės istoriją. 
-      Siūlau profesionalią vestuvių fotografijos paslaugą, apimančią visą šventės eigą – nuo pasiruošimo ryto spindesio iki vakaro šokio. Dėmesys detalėms, natūralios emocijos ir šilta, estetiška nuotraukų stilistika leidžia sukurti nuotraukas, prie kurių norisi grįžti vėl ir vėl.<br></p>
-
-<h3> Paslauga apima:</h3>
-<p style="text-align: left;">
-	•	Vestuvių dienos fotografavimą (nuo kelių valandų iki pilnos dienos)<br>
-	•	Poros fotosesiją pasirinktose vietose<br>
-	•	Reportažinius kadrus iš ceremonijos ir šventės<br>
-	•	Kruopščiai atrinktas, retušuotas nuotraukas aukščiausios kokybės formatu<br>
-	•	Internetinę galeriją ar USB laikmeną su nuotraukomis<br>
-</p>
- <h3>Papildomos galimybės:</h3>
- <p style="text-align: left;">
-	•	Sužadėtuvių ar „Love Story“ fotosesija<br>
-	•	Spausdintas nuotraukų albumas ar fotoknyga<br>
-	•	Kelionė į kitą miestą ar užsienį<br>
-
-    </p>
-  </article>
-    <article>
-      <h2>Nuotraukų redagavimas</h2>
-      <p>Teikiu aukštos kokybės nuotraukų redagavimo paslaugas, pritaikytas tiek asmeniniams, tiek verslo poreikiams.<br>
-      </p>
-      <h3>Atliekami darbai:</h3>
-      <p style="text-align: left;">
-          •	 Spalvų ir apšvietimo korekcija<br>
-          •	 Odos, plaukų ir detalių retušavimas<br>
-          •	 Fonų pašalinimas arba keitimas<br>
-          •	 Kūrybiniai fotomontažai, efektai ir filtrai<br>
-          •	 Produktų nuotraukų paruošimas el. parduotuvėms<br>
-          •	 Senų ar pažeistų nuotraukų atkūrimas<br>
-        </p>
-      </article>
-      <article>
-        <h2>Renginių fotografavimas</h2>
-        <p>Siūlau profesionalias renginių fotografavimo paslaugas, kurios padės įamžinti svarbiausias Jūsų šventės akimirkas. Nesvarbu, ar tai būtų verslo konferencija, gimtadienis, vestuvės ar kitas ypatingas įvykis – mano tikslas yra užfiksuoti nuotaiką, emocijas ir svarbiausius momentus.<br></p>
-        <h3>Paslaugos apima:</h3>
-        <p style="text-align: left;">
-            •	Išankstinę konsultaciją ir renginio planavimą<br>
-            •	Profesionalų fotografavimą viso renginio metu<br>
-            •	Reportažinius kadrus, portretus ir grupines nuotraukas<br>
-            •	Kruopščiai atrinktas ir redaguotas nuotraukas aukštos kokybės formatu<br>
-            •	Internetinę galeriją arba USB laikmeną su nuotraukomis<br>
-          </p>
+    </div>
+    <div id="nustatymuLangas" class="nustatymu-modalas">
+    <div class="nustatymu-turinys">
+        <span id="uzdarytiNustatymus" class="uzdaryti">&times;</span>
+        <h3 class="h4 mb-3">Nustatymai</h3>
         
-      </article>
-      <article>
-        <h2>Drono fotografija ir filmavimas</h2>
-        <p>Siūlau profesionalias drono fotografijos ir filmavimo paslaugas, kurios suteiks Jūsų projektams unikalų ir įspūdingą vaizdą iš paukščio skrydžio. Naudodamas pažangią drono technologiją, galiu užfiksuoti platų kraštovaizdį, architektūrinius objektus, renginius ar nekilnojamąjį turtą iš naujos perspektyvos.<br></p>
-        <h3>Paslaugos apima:</h3> 
-        <p style="text-align: left;">
-            •	Išankstinę konsultaciją ir skrydžio planavimą<br>
-            •	Profesionalų drono pilotavimą ir fotografavimą/filmavimą<br>
-            •	Aukštos raiškos nuotraukas ir 4K vaizdo įrašus<br>
-            •	Nuotraukų redagavimą ir vaizdo montažą pagal poreikius<br>
-            •	Galimybę gauti medžiagą įvairiems tikslams – reklamai, nekilnojamojo turto pristatymui, renginiams ir kt.<br>
-          </p>
-      </article>
-   
-</div>
-   <aside >
-        <h2>Kontaktai </h2>
-        <p>El. paštas: justasskru@gmail.com</p>
-        <p>Telefonas:<br> +370 612 34567</p>
-        <p>Adresas: Vilnius, Lietuva</p>
-        <h2>Pasiūlymas</h2>
-        <p>Renginio fotografimas iki gruodžio 5 d. 40% pigiau </p>
-        <h2>Sekite mus</h2>
-        <p>Instagram: @JShot</p>
-        <p>Facebook: JShot Photography</p>  
-        
-      </aside>
-
-</div>
-
+        <div class="mb-3">
+            <label class="form-label fw-bold">Fono režimas:</label>
+            <select id="temosPasirinkimas" class="form-select">
+                <option value="default">Šviesus (Įprastas)</option>
+                <option value="dark">Naktinis (Tamsus)</option>
+                <option value="sepia">Sepija (Skaitymo)</option>
+            </select>
+        </div>
+  
+        <div class="mb-3">
+            <label class="form-label fw-bold">Teksto dydis: <span id="dydžioReikšmė">16px</span></label>
+            <input type="range" id="tekstoDydis" class="form-range" min="14" max="24" step="1" value="16">
+        </div>
+    </div>
+  </div>
+  
+<script src="script.js"></script>
 </body>
-<footer>
-  <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
-
-</footer>
+  
 </html>

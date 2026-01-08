@@ -1,81 +1,137 @@
 <!DOCTYPE html>
+<html lang="lt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DUK</title>
+  <title>DUK - JShot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="puslapis">
-        <h1>JShot <img src="logo.png" alt="logo" id="logo"></h1>
+
+    <div class="container py-4" id="puslapis">
+        
+        <header class="mb-4">
+            <h1 class="d-flex align-items-center flex-wrap gap-3">
+                JShot 
+                <img src="logo.png" alt="logo" id="logo" class="img-fluid" style="max-height: 70px;"> 
+            </h1>
+        </header>
    
-    
+        <nav class="mb-5 d-flex flex-column flex-md-row gap-3 border-bottom pb-3">
+          <a href="index.html" class="text-decoration-none">Apie mane</a>
+          <a href="galerija.html" class="text-decoration-none">Portfolio</a>
+          <a href="Paslaugos.html" class="text-decoration-none">Paslaugos</a>
+          <a href="kainorastis.html" class="text-decoration-none">Kainoraštis</a>
+          <a href="forma.html" class="text-decoration-none fw-bold">DUK</a>
+          <button id="nustatymuAtidarymas" class="btn btn-outline-dark btn-sm mt-3 mt-lg-0 ms-lg-auto">
+            Nustatymai
+        </button>
+        </nav>
+
+        <div class="row g-4 turinys">
+            
+            <div class="col-12 col-md-12 col-lg-8 col-xl-9 blokas">
+                <h1 class="mb-4">DUK</h1>
+                
+                <div class="duk-sąrašas mb-5">
+                    <article class="mb-4"> 
+                        <h2 class="h5">Kokias fotografijos paslaugas siūlote?</h2>
+                        <p>Siūlome portretinę, vestuvinę, renginių fotografiją bei nuotraukų redagavimo paslaugas.</p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h2 class="h5">Kiek laiko užtrunka nuotraukų redagavimas?</h2>
+                        <p>Redagavimo laikas priklauso nuo užsakymo apimties, tačiau paprastai tai trunka nuo kelių dienų iki savaitės.</p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h2 class="h5">Ar teikiate paslaugas už Vilniaus ribų?</h2>
+                        <p>Taip, esame pasiruošę keliauti į kitus miestus ar šalis pagal kliento poreikius.</p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h2 class="h5">Kokie yra jūsų darbo įkainiai?</h2>
+                        <p>Mūsų kainoraštis yra prieinamas atskirame puslapyje. Kainos priklauso nuo paslaugos tipo ir trukmės.</p>
+                    </article>
+
+                    <article class="mb-4">
+                        <h2 class="h5">Ar galima užsisakyti fotosesiją dovanų kupono forma?</h2>
+                        <p>Kolkas ne, bet dirbame ties tuom.</p>
+                    </article>
+                </div>
+
+                <div class="forma p-4 border rounded bg-light">
+                    <h2 class="h4 mb-4">Turite dar klausimų? Susisiekite su mumis</h2>
+                    <form action="mailto:justasskru@gmail.com" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <label class="form-label">Vardas:</label>
+                            <input type="text" name="vardas" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">El. paštas:</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Klausimas:</label>
+                            <textarea name="zinute" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <input type="submit" value="Siųsti" class="btn btn-primary">
+                            <input type="reset" value="Išvalyti" class="btn btn-outline-secondary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <aside class="col-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="p-4 rounded border h-100" style="background-color: rgba(0,0,0,0.02);">
+                  <h2 class="h4">Kontaktai</h2>
+                  <p><strong>El. paštas:</strong><br> justasskru@gmail.com</p>
+                  <p><strong>Telefonas:</strong><br> +370 612 34567</p>
+                  <p><strong>Adresas:</strong><br> Vilnius, Lietuva</p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Pasiūlymas</h2>
+                  <p class="text-danger">Renginio fotografavimas iki gruodžio 5 d. <strong>40% pigiau</strong></p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Sekite mus</h2>
+                  <p>Instagram: @JShot<br>Facebook: JShot Photography</p>  
+              </div>
+            </aside>
         </div>
-<nav>
-    <a href="index.html">Apie mane</a>
-    <a href="galerija.html">Portfolio</a>
-    <a href="Paslaugos.html">Paslaugos</a>
-    <a href="kainorastis.html">Kainoraštis</a>
-    <a href="forma.html">DUK</a>
-</nav>
-    
-<div class="turinys">
-    <div class="blokas">
-        <h1>DUK</h1>
-        <article> 
-        <h2>Kokias fotografijos paslaugas siūlote?</h2>
-        <p>Siūlome portretinę, vestuvinę, renginių fotografiją bei nuotraukų redagavimo paslaugas.</p>
-    </article>
-    <article>
-        <h2>Kiek laiko užtrunka nuotraukų redagavimas?</h2>
-        <p>Redagavimo laikas priklauso nuo užsakymo apimties, tačiau paprastai tai trunka nuo kelių dienų iki savaitės.</p>
-    </article>
-        <article>
-        <h2>Ar teikiate paslaugas už Vilniaus ribų?</h2>
-        <p>Taip, esame pasiruošę keliauti į kitus miestus ar šalis pagal kliento poreikius.</p>
-        </article>
-        <article>
 
-        <h2>Kokie yra jūsų darbo įkainiai?</h2>
-        <p>Mūsų kainoraštis yra prieinamas atskirame puslapyje. Kainos priklauso nuo paslaugos tipo ir trukmės.</p>
-    </article>
-    <article>
-        <h2>Ar galima užsisakyti fotosesiją dovanų kupono forma?</h2>
-        <p>Kolkas ne, bet dirbame ties tuom.</p>
-    </article>
+        <footer class="mt-5 pt-4 border-top text-center text-muted">
+          <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
+        </footer>
     
-    
-
-<div class="forma">
-    <h2>Turite dar klausimu? Susisiekite su mumis</h2>
-    <form action="mailto: justasskru@gmail.com" method="post" enctype="text/plain">
-        Vardas:<br>
-        <input type="text" name="vardas" required><br>
-        El. paštas:<br>
-        <input type="email" name="email" required><br>
-        Klausimas:<br>
-        <textarea name="zinute" rows="4" cols="50" required></textarea><br><br>
-        <input type="submit" value="Siųsti">
-        <input type="reset" value="Išvalyti">
-    
-</div>
-
-</div>
-<aside >
-    <h2>Kontaktai </h2>
-    <p>El. paštas: justasskru@gmail.com</p>
-    <p>Telefonas: <br> +370 612 34567</p>
-    <p>Adresas: Vilnius, Lietuva</p>
-    <h2>Pasiūlymas</h2>
-    <p>Renginio fotografimas iki gruodžio 5 d. 40% pigiau </p>
-    <h2>Sekite mus</h2>
-    <p>Instagram: @JShot</p>
-    <p>Facebook: JShot Photography</p>  
-    
-  </aside>
-</div>
-<footer>
-  <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
-</footer>
+    </div>
+    <div id="nustatymuLangas" class="nustatymu-modalas">
+    <div class="nustatymu-turinys">
+        <span id="uzdarytiNustatymus" class="uzdaryti">&times;</span>
+        <h3 class="h4 mb-3">Nustatymai</h3>
+        
+        <div class="mb-3">
+            <label class="form-label fw-bold">Fono režimas:</label>
+            <select id="temosPasirinkimas" class="form-select">
+                <option value="default">Šviesus (Įprastas)</option>
+                <option value="dark">Naktinis (Tamsus)</option>
+                <option value="sepia">Sepija (Skaitymo)</option>
+            </select>
+        </div>
+  
+        <div class="mb-3">
+            <label class="form-label fw-bold">Teksto dydis: <span id="dydžioReikšmė">16px</span></label>
+            <input type="range" id="tekstoDydis" class="form-range" min="14" max="24" step="1" value="16">
+        </div>
+    </div>
+  </div>
+  
+ <script src="script.js"></script>
 </body>
+   
+
 </html>

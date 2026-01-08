@@ -2,61 +2,104 @@
 <html lang="lt">
 <head>
   <meta charset="UTF-8">
-  <title>Apie mane</title>
+  <title>Apie mane - JShot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
-  
 </head>
 <body>
-    <div id="puslapis">
-        <h1>JShot <img src="logo.png" alt="logo" id="logo"></h1>
+
+    <div class="container py-4" id="puslapis">
+        
+        <header class="mb-4">
+            <h1 class="d-flex align-items-center flex-wrap gap-3">
+                JShot 
+                <img src="logo.png" alt="logo" id="logo" class="img-fluid" style="max-height: 70px;"> 
+            </h1>
+        </header>
    
-  
+        <nav class="mb-5 d-flex flex-column flex-md-row gap-3 border-bottom pb-3">
+          <a href="index.html" class="text-decoration-none">Apie mane</a>
+          <a href="galerija.html" class="text-decoration-none">Portfolio</a>
+          <a href="Paslaugos.html" class="text-decoration-none">Paslaugos</a>
+          <a href="kainorastis.html" class="text-decoration-none">Kainoraštis</a>
+          <a href="forma.html" class="text-decoration-none">DUK</a>
+          
+         
+    <button id="nustatymuAtidarymas" class="btn btn-outline-dark btn-sm mt-3 mt-lg-0 ms-lg-auto">
+      Nustatymai
+  </button>
+        
+        </nav>
+
+        <div class="row g-4 turinys">
+            <div class="col-12 col-md-12 col-lg-8 col-xl-9 blokas">
+              <h1 class="mb-4">Apie mane</h1>
+              <article class="lh-base">
+                <p>Nuo pat vaikystės mane visada žavėjo akimirkos. Kai buvau dar visai mažas, mėgdavau stebėti, kaip šviesa krinta pro langą, kaip lietaus lašai bėga stiklu ar kaip žmonės juokiasi gatvėje. Tada dar nesupratau, kad visa tai – mažos istorijos, kurias galima išsaugoti. Pirmąjį fotoaparatą gavau iš tėvų – seną, paprastą skaitmeninį aparatą. Nors jis buvo toli gražu ne profesionalus, man jis atrodė stebuklingas. Kiekviena nuotrauka buvo tarsi naujas pasaulis, kuriame galėjau sustabdyti laiką.
+ 
+                Su kiekvienais metais noras fotografuoti tik augo. Iš pradžių fotografavau draugus, šeimą, gamtą aplink namus. Vėliau pradėjau gilintis į kompoziciją, šviesą ir emocijas – norėjosi, kad nuotraukos ne tik gražiai atrodytų, bet ir pasakotų istoriją. Supratau, kad fotografija – tai ne tik mygtuko paspaudimas, o gebėjimas pamatyti pasaulį kitaip, pastebėti tai, kas dažnai lieka nepastebėta.
+                
+                Dabar fotografija man tapo daugiau nei pomėgiu – tai mano būdas išreikšti save. Per objektyvą galiu parodyti, kaip matau pasaulį: jo grožį, švelnumą, emocijas. Nors fotografuoju dėl malonumo, kiekviena nuotrauka man svarbi. Kiekviena jų turi savo istoriją, jausmą ir prisiminimą.
+                
+                Fotografuodamas siekiu ne tobulumo, o tikrumo. Man svarbiausia – akimirka, emocija, šypsena ar žvilgsnis, kuris pasako daugiau nei žodžiai. Fotografija mane išmokė kantrybės, dėmesio detalėms ir gebėjimo matyti grožį net paprasčiausiuose dalykuose.
+                Ir šiandien, kai paimu fotoaparatą į rankas, vis dar jaučiu tą patį jaudulį kaip vaikystėje – tą nepaaiškinamą džiaugsmą fiksuojant pasaulį aplink save.</p>
+            
+                </article>
+              
+              <div class="mt-4 text-center text-lg-start">
+                <img src="nutr.jpg" class="apie-nuotrauka img-fluid rounded shadow-sm" alt="Apie mane nuotrauka">
+              </div>
+            </div>
+
+            <aside class="col-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="p-4 rounded border h-100" style="background-color: rgba(0,0,0,0.02);">
+                  <h2 class="h4">Kontaktai</h2>
+                  <p><strong>El. paštas:</strong><br> justasskru@gmail.com</p>
+                  <p><strong>Telefonas:</strong><br> +370 612 34567</p>
+                  <p><strong>Adresas:</strong><br> Vilnius, Lietuva</p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Pasiūlymas</h2>
+                  <p class="text-danger">Renginio fotografavimas iki gruodžio 5 d. <strong>40% pigiau</strong></p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Sekite mus</h2>
+                  <p>Instagram: @JShot<br>Facebook: JShot Photography</p>  
+              </div>
+            </aside>
         </div>
-<nav>
-  <a href="index.html">Apie mane</a>
-  <a href="galerija.html">Portfolio</a>
-  <a href="Paslaugos.html">Paslaugos</a>
-  <a href="kainorastis.html">Kainoraštis</a>
-  <a href="forma.html">DUK</a>
-</nav>
-<div class="turinys">
-<div class="blokas">
+
+        <footer class="mt-5 pt-4 border-top text-center text-muted">
+          <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
+        </footer>
+    
+    </div>
+
+    <div id="nustatymuLangas" class="nustatymu-modalas">
+      <div class="nustatymu-turinys">
+          <span id="uzdarytiNustatymus" class="uzdaryti">&times;</span>
+          <h3 class="h4 mb-3">Nustatymai</h3>
+          
+          <div class="mb-3">
+              <label class="form-label fw-bold">Fono režimas:</label>
+              <select id="temosPasirinkimas" class="form-select">
+                  <option value="default">Šviesus (Įprastas)</option>
+                  <option value="dark">Naktinis (Tamsus)</option>
+                  <option value="sepia">Sepija (Skaitymo)</option>
+              </select>
+          </div>
+
+          <div class="mb-3">
+              <label class="form-label fw-bold">Teksto dydis: <span id="dydžioReikšmė">16px</span></label>
+              <input type="range" id="tekstoDydis" class="form-range" min="14" max="24" step="1" value="16">
+          </div>
+      </div>
+  </div>
+<script src="script.js"></script>
   
-  <h1>Apie mane</h1>
-  <article>
-  <p>Nuo pat vaikystės mane visada žavėjo akimirkos. Kai buvau dar visai mažas, mėgdavau stebėti, kaip šviesa krinta pro langą, kaip lietaus lašai bėga stiklu ar kaip žmonės juokiasi gatvėje. Tada dar nesupratau, kad visa tai – mažos istorijos, kurias galima išsaugoti. Pirmąjį fotoaparatą gavau iš tėvų – seną, paprastą skaitmeninį aparatą. Nors jis buvo toli gražu ne profesionalus, man jis atrodė stebuklingas. Kiekviena nuotrauka buvo tarsi naujas pasaulis, kuriame galėjau sustabdyti laiką.
- 
-    Su kiekvienais metais noras fotografuoti tik augo. Iš pradžių fotografavau draugus, šeimą, gamtą aplink namus. Vėliau pradėjau gilintis į kompoziciją, šviesą ir emocijas – norėjosi, kad nuotraukos ne tik gražiai atrodytų, bet ir pasakotų istoriją. Supratau, kad fotografija – tai ne tik mygtuko paspaudimas, o gebėjimas pamatyti pasaulį kitaip, pastebėti tai, kas dažnai lieka nepastebėta.
-    
-    Dabar fotografija man tapo daugiau nei pomėgiu – tai mano būdas išreikšti save. Per objektyvą galiu parodyti, kaip matau pasaulį: jo grožį, švelnumą, emocijas. Nors fotografuoju dėl malonumo, kiekviena nuotrauka man svarbi. Kiekviena jų turi savo istoriją, jausmą ir prisiminimą.
-    
-    Fotografuodamas siekiu ne tobulumo, o tikrumo. Man svarbiausia – akimirka, emocija, šypsena ar žvilgsnis, kuris pasako daugiau nei žodžiai. Fotografija mane išmokė kantrybės, dėmesio detalėms ir gebėjimo matyti grožį net paprasčiausiuose dalykuose.
-    Ir šiandien, kai paimu fotoaparatą į rankas, vis dar jaučiu tą patį jaudulį kaip vaikystėje – tą nepaaiškinamą džiaugsmą fiksuojant pasaulį aplink save.</p>
-
-    </article>
-   <article>
-    <img src="nutr.jpg" class="apie-nuotrauka" >
-    </article>
-    
-</div>
-<aside >
-  <h2>Kontaktai </h2>
-  <p>El. paštas: justasskru@gmail.com</p>
-  <p>Telefonas: <br> +370 612 34567</p>
-  <p>Adresas: Vilnius, Lietuva</p>
-  <h2>Pasiūlymas</h2>
-  <p>Renginio fotografimas iki gruodžio 5 d. 40% pigiau </p>
-  <h2>Sekite mus</h2>
-  <p>Instagram: @JShot</p>
-  <p>Facebook: JShot Photography</p>  
- 
-</aside>
-</div>
-<footer>
-  <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
-
-</footer>
 </body>
+
 </html>

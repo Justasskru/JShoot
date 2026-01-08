@@ -1,342 +1,178 @@
-#puslapis{
-   width: 600px;
-  margin: 0 auto;
-    
-  }
-#logo{
-    width: 100px;
-    height: 100px;
-    size: 10px;
-    vertical-align: middle;
-color: #333;
-    
-  }
 
-
-body {
+   html {
+    
+    font-size: 16px; 
+  }
+  
+  body {
     color: #333;
     background-color: #fff8f0;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
   }
-  p{
+  
+  
+  .container {
+    max-width: 1400px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  
+  .turinys {
+    margin-top: 1.5rem; 
+  }
+  
+  
+  nav {
+    background: linear-gradient(90deg, #ff7b00, #ffaf40);
+    padding: 0.8rem 1rem !important;
     text-align: center;
-   
-     margin: 20px;
-    font-size: 20px;
-    color: #333;
-    width: 90%;
-    margin-bottom: 20px;
+    border-radius: 4px;
+    margin-bottom: 1.5rem !important;
   }
-
-.turinys {
-  display: flex;
-  gap: 0px;
-  align-items: flex-start;
-}
-
+  
+  nav a {
+    margin: 0 0.8rem;
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: bold;
+   
+    font-size: 1rem; 
+    transition: opacity 0.3s;
+  }
+  
+  nav a:hover {
+    opacity: 0.8;
+  }
+  
+  
+  article {
+    background-color: #ffffff;
+    padding: 1.5rem; 
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 100%;
+  }
+  
   aside {
-    flex-shrink:0 ;
-    float: right;
-    display: block;
+    background-color: #ffd6a5 !important;
+    padding: 1.5rem !important;
+    border-radius: 8px;
+    height: fit-content;
+    
+    
+    position: -webkit-sticky;
     position: sticky;
     top: 20px;
-    align-self: flex-start;
-    height: calc(100vh - 40px);
-    box-sizing: border-box;
-    width: 250px;
-    background-color: #ffd6a5;
-    padding: 15px;
-    margin: 20px 10px;
-   
-    font-size: 16px;
-    text-align: center;
-    color: #333;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-radius: 8px;
-    overflow-y: auto;
-    margin-bottom: 120px;
-  width: 250px;
-   min-height: 500px;
-  }
-
-aside p  { 
-    color: #333;
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-     }
-     
+    min-height: calc(100vh - 100px);
     
-  nav {
-    background: linear-gradient(90deg, #ff7b00, #ffaf40);
-    background-size: auto;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  
-  
-  nav a {
-    margin: 15px;
-    text-decoration: none;
-    color: #fff;
-  }
-  nav a:hover {
-    color: #ffb84d;
-  }
-  
-  
-  h1 {
-    text-align: center;
-    color: #333;
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-  h2 {
-    text-align: inherit;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .blokas {
-    display: grid;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    color: #333;
-   width: auto;
-    padding: 10px;
-    box-sizing: border-box;
-   
-    
-  }
-  .blokas p {
-  text-align: left;
-  color: #333;
-  }
-
-
-article {
-display: block;
-text-size-adjust: auto;
-    text-align: center;
-    width: auto;
-    min-width: 300px;
-    margin: 10px;
-    padding: 20px;
-    color: #333;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    justify-content: center;
-    width: auto;
-    
-}
-
-
-  .galerija {
-    
-    align-items: center;
-    text-align: center;
-    margin: 40px;
-    width: auto;
-    
- 
-    
-  }
-  .galerija img:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-  
-  img {
-    width: auto;
-    max-width: 400px;
-    height: auto;
-    margin: 10px;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-  
-  table {
-    align-items: center;
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  .lentele{
-    margin-left: 175px;
-    margin-right: 175px;
-   height: 200px;
-  padding: 20px 0px ;
-    width: 500px;
-    
-  }
-td {
-    border: none;
-    padding: 8px;
-    text-align: left;
-    color: #333;
-  }
- 
-   h3 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .apie-nuotrauka {
-    justify-items: center;
-text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    width: auto; 
-    margin: 10px 0 10px 20px; 
-    
-  }
-  .forma {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  width: 100%;
-  padding: 20px;
-  margin: 20px auto;
-  box-sizing: border-box;
-}
-  .forma label {
-    margin-bottom: 5px;
-    color: #333;
-  }
-  .forma input, .forma textarea {
-    margin-bottom: 15px;
-    padding: 8px;
-    border: 1px solid #ffd6a5;
-    border-radius: 4px;
-    color: #333;
-  }
-  .forma button {
-    padding: 10px;
-    background-color: #ff7b00;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .forma button:hover {
-    background-color: #e36b00;
-  }    
-footer{
-    background: linear-gradient(90deg, #ff7b00, #ffaf40);
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-    clear: both;
-  }
-
-
-@media (max-width: 1024px) {
-  #puslapis {
-    width: 90%;
-  }
-  article {
-    float: none;
-    width: auto;
-    margin: 10px;
-    padding: 15px;
-  }
-  img {
-    width: 300px;
-  }
-  aside {
-    float: none;
-    
-    
-    margin: 20px;
-  }
-  .lentele {
-    margin-left: 0;
-    width: 90%;
-  }
-  .apie-nuotrauka { 
-    float: none;
-    width: 60%;
-    margin: 10px 0;
-    justify-self: center;
-
-}
-  .galerija {
-    margin: 10px;
-
-
-  }
-}
-@media (max-width: 788px) { 
-  #logo {
-    width: 80px;
-    height: 80px;
-  }
-  nav {
-    padding: 10px;
-  }
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-  article {
-    float: none;
-    width: auto;
-    margin: 10px 0;
-    padding: 10px;
-  }
-  img {
-    width: 100%;
-    margin: 5px 0;
-    margin-top: 40px;
-  }
-  .galerija {
-    margin: 10px;
-    
-  }
-  
-  .apie-nuotrauka {
-    float: none;
-    width: 100%;
-    margin: 10px 0;
-   
-  }
-  .turinys {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
-  aside {
-    position: static;
-    width: 100%;
-    min-height: auto;
-    margin-top: 20px;
-    margin: 10px 0 30px 0;
-    height: auto;
-    float : none;
-   
+  
+ 
+  h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+  h2 { font-size: 2rem; margin-bottom: 0.8rem; }
+  h3 { font-size: 1.75rem; margin-bottom: 0.8rem; }
+  h4 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  
+  p {
+    text-align: left;
     
-  }
-  .lentele {
-    margin-left: 0;
-    width: 100%;
-
-  }
-  .forma {
-    padding: 0px;
-  }
-
-  .forma h2 {
+    font-size: 1rem; 
+    margin-bottom: 1rem !important;
     width: 100%;
   }
-}
+  
+  aside h2 {
+    font-size: 1.4rem; 
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+  }
+  
+  aside p {
+    font-size: 0.95rem; 
+    margin: 0.5rem 0 !important;
+  }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .galerija img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .galerija img:hover {
+    transform: scale(1.03);
+  }
+  
+  .table {
+    margin-bottom: 0;
+  }
+  
+  
+  footer {
+    background: linear-gradient(90deg, #ff7b00, #ffaf40);
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  footer p {
+    text-align: center;
+    margin: 0 !important;
+  }
+  
+  
+  .nustatymu-modalas {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+  }
+  
+  .nustatymu-turinys {
+    background-color: #ffffff;
+    margin: 10vh auto; 
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    position: relative;
+    color: #333;
+  }
+  
+  .uzdaryti {
+    position: absolute;
+    right: 1.2rem;
+    top: 0.8rem;
+    color: #aaa;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    line-height: 1;
+  }
+  
+  .uzdaryti:hover {
+    color: #ff7b00;
+  }
+  

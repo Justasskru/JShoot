@@ -1,122 +1,149 @@
 <!DOCTYPE html>
+<html lang="lt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kainoraštis</title>
+  <title>Kainoraštis - JShot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    table tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    table tr:nth-child(odd) {
-      background-color: #ffffff;
-    }
-  </style>
 </head>
 <body>
-    <div id="puslapis">
 
-        <h1>JShot <img src="logo.png" alt="logo" id="logo"></h1>
+    <div class="container py-4" id="puslapis">
+        
+        <header class="mb-4">
+            <h1 class="d-flex align-items-center flex-wrap gap-3">
+                JShot 
+                <img src="logo.png" alt="logo" id="logo" class="img-fluid" style="max-height: 70px;"> 
+            </h1>
+        </header>
    
-    
+        <nav class="mb-5 d-flex flex-column flex-md-row gap-3 border-bottom pb-3">
+          <a href="index.html" class="text-decoration-none">Apie mane</a>
+          <a href="galerija.html" class="text-decoration-none">Portfolio</a>
+          <a href="Paslaugos.html" class="text-decoration-none">Paslaugos</a>
+          <a href="kainorastis.html" class="text-decoration-none fw-bold">Kainoraštis</a>
+          <a href="forma.html" class="text-decoration-none">DUK</a>
+          <button id="nustatymuAtidarymas" class="btn btn-outline-dark btn-sm mt-3 mt-lg-0 ms-lg-auto">
+            Nustatymai
+        </button>
+        </nav>
+
+        <div class="row g-4 turinys">
+            
+            <div class="col-12 col-md-12 col-lg-8 col-xl-9 blokas">
+                <h1 class="mb-4">Kainoraštis</h1>
+                
+                <article class="mb-5">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover border">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Paslauga</th>
+                                    <th>Kaina</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Portretinė fotosesija</td>
+                                    <td>80 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Renginio fotografavimas</td>
+                                    <td>80 €/h</td>
+                                </tr>
+                                <tr>
+                                    <td>Vestuvinė fotosesija</td>
+                                    <td>800 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Nuotraukų redagavimas</td>
+                                    <td>10 €/nuotrauka</td>
+                                </tr>
+                                <tr>
+                                    <td>Drono fotografija/filmavimas</td>
+                                    <td>50 €/h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="mb-4">
+                            <h2 class="h4">Pastabos:</h2>
+                            <ul class="list-unstyled lh-lg">
+                                <li>• Visos kainos nurodytos su PVM.</li>
+                                <li>• Kainos gali skirtis priklausomai nuo projekto sudėtingumo.</li>
+                                <li>• Galimos nuolaidos lojaliems klientams.</li>
+                                <li>• Išankstinis apmokėjimas rezervacijai.</li>
+                                <li>• Susisiekite dėl individualių poreikių.</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="mb-4">
+                            <h2 class="h4">Atsiskaitymo būdai:</h2>
+                            <ul class="list-unstyled lh-lg">
+                                <li>• Banko pavedimas</li>
+                                <li>• Grynieji pinigai</li>
+                                <li>• Kortelės (Visa, MasterCard)</li>
+                                <li>• Apple Pay / Google Pay</li>
+                                <li>• PayPal / Revolut</li>
+                            </ul>    
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="p-4 rounded border h-100" style="background-color: rgba(0,0,0,0.02);">
+                  <h2 class="h4">Kontaktai</h2>
+                  <p><strong>El. paštas:</strong><br> justasskru@gmail.com</p>
+                  <p><strong>Telefonas:</strong><br> +370 612 34567</p>
+                  <p><strong>Adresas:</strong><br> Vilnius, Lietuva</p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Pasiūlymas</h2>
+                  <p class="text-danger">Renginio fotografavimas iki gruodžio 5 d. <strong>40% pigiau</strong></p>
+                  
+                  <hr class="my-4">
+                  
+                  <h2 class="h4">Sekite mus</h2>
+                  <p>Instagram: @JShot<br>Facebook: JShot Photography</p>  
+              </div>
+            </aside>
         </div>
-<nav>
-  <a href="index.html">Apie mane</a>
-  <a href="galerija.html">Portfolio</a>
-  <a href="Paslaugos.html">Paslaugos</a>
-  <a href="kainorastis.html">Kainoraštis</a>
-  <a href="forma.html">DUK</a>
-</nav>
-<div class="turinys">
 
-<div class ="blokas">
-   <h1>Kainoraštis</h1>
-  <article>
-<div class="lentele">
-  
-  <table>
-    <tr>
-      <th>Paslauga</th>
-      <th>Kaina</th>
-    </tr>
-    <tr>
-      <td>Portretinė fotosesija</td>
-      <td>80 €</td>
-    </tr>
-    <tr>
-      <td>Renginio fotografavimas</td>
-      <td>80 €/h</td>
-    </tr>
-    <tr>
-      <td>Vestuvinė fotosesija</td>
-      <td>800 €</td>
-    </tr>
-    <tr>
-      <td>Nuotraukų redagavimas</td>
-      <td>10 €/nuotrauka</td>
-    </tr>
-    <tr>
-      <td>Drono fotografija/filmavimas</td>
-      <td>50 €/h</td>
-    </tr>
+        <footer class="mt-5 pt-4 border-top text-center text-muted">
+          <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
+        </footer>
     
-  </table>
-</div>
-</article>
-  <article>
-    <h2>Pastabos:</h2>
-    <p>
-      • Visos kainos nurodytos su PVM.<br>
-      • Kainos gali skirtis priklausomai nuo projekto sudėtingumo ir kliento poreikių.<br>
-      • Galimos nuolaidos ilgalaikiams klientams arba didesniems užsakymams.<br>
-      • Išankstinis apmokėjimas reikalingas rezervuojant paslaugas.<br>
-      • Dėl papildomų paslaugų ar individualių poreikių, prašome susisiekti tiesiogiai.<br>
-    </p>
-  </article>
-  <article>
-    <h2>Atsiskaitymo būdai:</h2>
-    <p>
-      • Banko pavedimas<br>
-      • Grynieji pinigai<br>
-      • Mokėjimo kortelės (Visa, MasterCard)<br>
-      • Skaitmeninės piniginės (PayPal, Revolut)<br>
-      • Mobilieji mokėjimai (Apple Pay, Google Pay)<br>
-      • Susisiekite dėl kitų atsiskaitymo būdų ar individualių susitarimų.
-    </p>    
-  </article>
-
+    </div>
+    <div id="nustatymuLangas" class="nustatymu-modalas">
+    <div class="nustatymu-turinys">
+        <span id="uzdarytiNustatymus" class="uzdaryti">&times;</span>
+        <h3 class="h4 mb-3">Nustatymai</h3>
+        
+        <div class="mb-3">
+            <label class="form-label fw-bold">Fono režimas:</label>
+            <select id="temosPasirinkimas" class="form-select">
+                <option value="default">Šviesus (Įprastas)</option>
+                <option value="dark">Naktinis (Tamsus)</option>
+                <option value="sepia">Sepija (Skaitymo)</option>
+            </select>
+        </div>
+  
+        <div class="mb-3">
+            <label class="form-label fw-bold">Teksto dydis: <span id="dydžioReikšmė">16px</span></label>
+            <input type="range" id="tekstoDydis" class="form-range" min="14" max="24" step="1" value="16">
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
   
 
-</div>
-<aside >
-    <h2>Kontaktai </h2>
-    <p>El. paštas: justasskru@gmail.com</p>
-    <p>Telefonas: <br> +370 612 34567</p>
-    <p>Adresas: Vilnius, Lietuva</p>
-    <h2>Pasiūlymas</h2>
-    <p>Renginio fotografimas iki gruodžio 5 d. 40% pigiau </p>
-    <h2>Sekite mus</h2>
-    <p>Instagram: @JShot</p>
-    <p>Facebook: JShot Photography</p>  
-   
-  </aside>
-</div>
-
-</body>
-<footer>
-<style>
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-    background-color: #f1f1f1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
-
-  <p>&copy; 2025 JShot. Visos teisės saugomos.</p>
-
-</footer>
 </html>
