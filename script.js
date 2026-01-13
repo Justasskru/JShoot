@@ -115,6 +115,7 @@ function taikytiNustatymus() {
     const elementaiSuJuoduTekstu = document.querySelectorAll(`
         article, article *, 
         aside, aside *, 
+        forma, forma *,
         .nustatymu-turinys, .nustatymu-turinys *,
         form, form label, form input, form textarea, form select
     `);
